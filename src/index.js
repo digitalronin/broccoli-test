@@ -12,3 +12,7 @@ for (let i of counter(1, 5)) {
   console.log(`count is ${i}`)
 }
 
+
+var mc = new MyClass()
+mc.foo()
+

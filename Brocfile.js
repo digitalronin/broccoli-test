@@ -17,7 +17,7 @@ appJs = mergeTrees([browserPolyfill, appJs])
 
 // Concatenate all the JS files into a single file
 appJs = concat(appJs, {
-  inputFiles: ['browser-polyfill.js', '*.js'],
+  inputFiles: ['browser-polyfill.js', 'classes/*.js', '*.js'],
   outputFile: 'index.js'
 })
 
