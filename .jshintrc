@@ -1,0 +1,16 @@
+// vim: set filetype=javascript:
+
+// See http://www.jshint.com/options/ for the elaboration of the options.
+// The comment after each entry is the result of applying this configuration.
+// When toggling the booleans, don't forget to change the comments as well.
+
+{
+  "curly":      true,    // Always put curly braces around blocks in loops and conditionals.
+  "esversion":  6,
+  "esnext":     true,    // allow concise functions (among other things)
+  "debug":      false,   // Warns about the debugger statements in your code.
+  "asi":        true,    // don't warn about missing semicolons.
+  "boss":       false,   // warn about assignment in conditionals
+  "eqnull":     false    // warn about `== null` comparisons.
+}
+
