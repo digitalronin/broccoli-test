@@ -8,3 +8,7 @@ dist/index.js: src/index.js
 clean:
 	@rm -rf dist || true
 
+test:
+	./node_modules/.bin/mocha --compilers js:babel-core/register
+
+.PHONY: test
