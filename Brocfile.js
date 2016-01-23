@@ -1,6 +1,14 @@
-var babel = require('broccoli-babel-transpiler');
+var babel  = require('broccoli-babel-transpiler');
+var funnel = require('broccoli-funnel');
+var concat = require('broccoli-concat');
 
-transpiler = babel('src')
+var appJs = babel('src')
 
-module.exports = transpiler
+// Concatenate all the JS files into a single file
+appJs = concat(appJs, {
+  inputFiles: ['*.js'],
+  outputFile: 'index.js'
+});
+
+module.exports = appJs
 
